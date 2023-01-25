@@ -33,23 +33,25 @@ Open your browser, type:
 ```
     http://localhost:8080/customers/{customerId}   
 ```       
-
+    
+    
 Example:   
 ```  
-http://localhost:8080/customers/1001    
+    http://localhost:8080/customers/1001    
 ```
 Response:  
 {"customerId":1001,"name":"Alex","lastMonthRewardPoints":40,"lastSecondMonthRewardPoints":144,"lastThirdMonthRewardPoints":300,"totalRewardPoints":484}   
-
+   
+    
 If you type:   
 ```
-http://localhost:8080/  
+    http://localhost:8080/  
 ``` 
 It will show a message:   
 ```
-Error: This Page Can Not Be Found. Please Try http://localhost:8080/customers/{customerId}   
+    Error: This Page Can Not Be Found. Please Try http://localhost:8080/customers/{customerId}   
 ```
-
+   
 # To Run the Unit Tests
 Go to the folder Rewards-REST-API, type the command in your terminal:   
 ```
