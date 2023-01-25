@@ -1,5 +1,5 @@
 insert into customer(id, customer_name) values (1000, 'Max');
-insert into customer(id, customer_name) values (1001, 'Elex');
+insert into customer(id, customer_name) values (1001, 'Alex');
 insert into customer(id, customer_name) values (1002, 'Violet');
 insert into customer(id, customer_name) values (1003, 'May');
 
