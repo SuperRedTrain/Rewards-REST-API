@@ -18,37 +18,38 @@ Given a record of every transaction during a three-month period, calculate the r
 There is some instructions on how to use this Rewards REST API locally.
 
 # To Run this API Project Locally
-In your terminal, type the command:
-    git clone https://github.com/SuperRedTrain/Rewards-REST-API.git
-Go to the folder Rewards-REST-API, type the command in your terminal to run this Rewards REST API:
-    mvn spring-boot: run
+In your terminal, type the command:   
+    git clone https://github.com/SuperRedTrain/Rewards-REST-API.git    
+
+Go to the folder Rewards-REST-API, type the command in your terminal to run this Rewards REST API:   
+    mvn spring-boot: run   
 
 # To Calculate the Rewards for Each Customer
-Open your browser, type:
-    http://localhost:8080/customers/{customerId}
+Open your browser, type:  
+    http://localhost:8080/customers/{customerId}      
 
-Example:  http://localhost:8080/customers/1001
-Response: {"customerId":1001,"name":"Alex","lastMonthRewardPoints":40,"lastSecondMonthRewardPoints":144,"lastThirdMonthRewardPoints":300,"totalRewardPoints":484}
+Example:  http://localhost:8080/customers/1001    
+Response: {"customerId":1001,"name":"Alex","lastMonthRewardPoints":40,"lastSecondMonthRewardPoints":144,"lastThirdMonthRewardPoints":300,"totalRewardPoints":484}   
 
-If you type:  http://localhost:8080/ 
-It will show a message:  Error: This Page Can Not Be Found. Please Try http://localhost:8080/customers/{customerId}
+If you type:  http://localhost:8080/   
+It will show a message:  Error: This Page Can Not Be Found. Please Try http://localhost:8080/customers/{customerId}   
 
 # To Run the Unit Tests
-Go to the folder Rewards-REST-API, type the command in your terminal:
-    ./mvnw test
+Go to the folder Rewards-REST-API, type the command in your terminal:   
+    ./mvnw test   
 
 # Monitor the API by using Spring Boot Actuator
-Open your browser, type:
-    http://localhost:8080/manage/health
-    http://localhost:8080/manage/info
+Open your browser, type:   
+    http://localhost:8080/manage/health   
+    http://localhost:8080/manage/info   
 
 # To Run the Dockerized API Locally
-First, make sure you have Docker running locally. Then, go to the folder Rewards-REST-API, type these commands in your terminal:
-    mvn install 
-    docker build -t rewards-docker .
-    docker run -dp 8080:8080 rewards-docker
-Now, if you take a quick look at your Docker Dashboard, you should see at least one container running that is using the rewards-docker image and on port 8080. Open your browser, you can get customer rewards based on customer Id:
-    http://localhost:8080/customers/{customerId}
+First, make sure you have Docker running locally. Then, go to the folder Rewards-REST-API, type these commands in your terminal:    
+    mvn install    
+    docker build -t rewards-docker .   
+    docker run -dp 8080:8080 rewards-docker   
+Now, if you take a quick look at your Docker Dashboard, you should see at least one container running that is using the rewards-docker image and on port 8080. Open your browser, you can get customer rewards based on customer Id:    
+    http://localhost:8080/customers/{customerId}    
 
 
 
